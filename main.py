@@ -25,7 +25,7 @@ def post_tweet(api: tweepy.API, message: str):
 openai.api_key = os.getenv('OPENAI_API_KEY')
 twitterApi = api()
 
-for i in range(50):
+for i in range(45):
     resp = requests.get('http://www.jimprice.com/generator/generate.php')
     soup = bs.BeautifulSoup(resp.text, features='lxml')
 
