@@ -41,4 +41,6 @@ for i in range(50):
 
     tweet = tweet["choices"][0]["text"].strip()
     post_tweet(twitterApi, tweet)
+    print('\nGoing to sleep...see you tomorrow')
     time.sleep(60*60*24)
+    print('Time to wake up. Time right now is: {}'.format(datetime.now(pytz.timezone('Asia/Kolkata'))))
