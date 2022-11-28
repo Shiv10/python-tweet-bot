@@ -19,7 +19,7 @@ def api():
 def post_tweet(api: tweepy.API, message: str):
     api.update_status(message)
     date = datetime.now(pytz.timezone('Asia/Kolkata'))
-    print('\n\nTweeted:\n{}\nat : {}'.format(message, date))
+    print('\nTweeted:\n{}\nat : {}'.format(message, date))
 
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
